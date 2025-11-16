@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "playwright": "^1.56.1"
+  },
+  "name": "sauce-demo-web-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faisalkabir1/Sauce-Demo-Web-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faisalkabir1/Sauce-Demo-Web-Automation/issues"
+  },
+  "homepage": "https://github.com/faisalkabir1/Sauce-Demo-Web-Automation#readme"
+}
