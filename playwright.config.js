@@ -37,7 +37,7 @@ export default defineConfig({
 
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    //baseURL: "https://dailyfinance.roadtocareer.net/",
+    baseURL: 'https://www.saucedemo.com/',
     video: "on-first-retry",
     screenshot: "only-on-failure",
 

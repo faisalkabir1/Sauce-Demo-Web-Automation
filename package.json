@@ -10,7 +10,7 @@
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.10.1"
   },
-  "scripts": {},
+  "scripts": { "test": "playwright test"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faisalkabir1/Sauce-Demo-Web-Automation.git"
