@@ -1,11 +1,12 @@
-// @ts-check
-import { test, expect } from '@playwright/test';
+const { test, expect } = require('@playwright/test');
+const { LoginPage } = require('../pages/LoginPage');
 
-test('login, add one item, verify cart, and logout', async ({ page }) => {
-  // 1) Login
-  await page.goto('/');
-  await page.locator('#user-name').fill('standard_user');
-  await page.locator('#password').fill('secret_sauce');
-  await page.locator('#login-button').click();
-}
-);
+test('User can login with valid credentials', async ({ page }) => {
+  const login = new LoginPage(page);
+
+  await login.goto();
+  await login.login('standard_user', 'secret_sauce');
+//assert with url
+  await expect(page).toHaveURL(/inventory/);
+  await page.waitForTimeout(2000);
+});
