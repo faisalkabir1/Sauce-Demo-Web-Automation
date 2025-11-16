@@ -11,5 +11,6 @@ test('User logs out successfully', async ({ page }) => {
 await page.waitForTimeout(2000);
   await menu.logout();
   await expect(page).toHaveURL('/');
+  
   await page.waitForTimeout(2000);
 });
